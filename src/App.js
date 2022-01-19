@@ -1,4 +1,6 @@
+import { FaGithub, FaGithubAlt } from "react-icons/fa";
 import { useState, useEffect } from "react";
+import Header from "./components/Header";
 import List from "./components/List";
 
 function App() {
@@ -25,8 +27,8 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1 className="title">GitHub Users</h1>
-        <List list={users} />
+        <Header title="GitHub Users" icon={<FaGithub />} />
+        <List list={users} badge={<FaGithubAlt />} />
       </div>
     </>
   );

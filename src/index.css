@@ -18,6 +18,14 @@ code {
     monospace;
 }
 
+header > .title {
+  font-size: 1.8rem;
+}
+
+header > svg {
+  font-size: 10rem;
+}
+
 ul {
   list-style-type: none;
 }
@@ -39,6 +47,7 @@ a {
 }
 
 .user {
+  position: relative;
   display: flex;
   gap: 1.5rem;
   align-items: center;
@@ -65,6 +74,14 @@ a {
   font-size: 0.9rem;
   letter-spacing: 1px;
   color: #161163a1;
+}
+
+.badge {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  margin: 1rem 1rem 0 0;
+  color: #16116352;
 }
 
 @media screen and (min-width: 768px) {
