@@ -6,7 +6,6 @@ import List from "./components/List";
 function App() {
   const [users, setUsers] = useState([]);
   const [position, setPosition] = useState("");
-  // console.log(users);
 
   const URL = "https://api.github.com/users";
 
