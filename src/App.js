@@ -25,7 +25,7 @@ function App() {
   return (
     <>
       <div className="App">
-        <h1>GitHub Users</h1>
+        <h1 className="title">GitHub Users</h1>
         <List list={users} />
       </div>
     </>

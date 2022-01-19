@@ -2,7 +2,7 @@ import { ListItem } from "./ListItem";
 
 const List = ({ list }) => {
   return (
-    <ul>
+    <ul className="users-list">
       {list.map((item) => (
         <ListItem item={item} />
       ))}
