@@ -1,6 +1,6 @@
-const Header = ({ title, icon }) => {
+const Header = ({ title, icon, position }) => {
   return (
-    <header>
+    <header className={position > 208 ? "deep" : ""}>
       {icon}
       <h1 className="title">{title}</h1>
     </header>

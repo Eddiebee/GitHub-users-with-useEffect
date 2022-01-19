@@ -5,6 +5,7 @@ import List from "./components/List";
 
 function App() {
   const [users, setUsers] = useState([]);
+  const [position, setPosition] = useState("");
   // console.log(users);
 
   const URL = "https://api.github.com/users";
@@ -24,10 +25,22 @@ function App() {
     getUsers();
   }, []);
 
+  useEffect(() => {
+    window.addEventListener("scroll", logScroll);
+
+    function logScroll(e) {
+      setPosition(window.scrollY);
+    }
+
+    return () => {
+      window.removeEventListener("scroll", logScroll);
+    };
+  }, []);
+
   return (
     <>
       <div className="App">
-        <Header title="GitHub Users" icon={<FaGithub />} />
+        <Header title="GitHub Users" icon={<FaGithub />} position={position} />
         <List list={users} badge={<FaGithubAlt />} />
       </div>
     </>

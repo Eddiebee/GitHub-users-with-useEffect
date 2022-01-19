@@ -20,10 +20,14 @@ code {
 
 header > .title {
   font-size: 1.8rem;
+  /* transition: font-size 3s; */
 }
 
 header > svg {
   font-size: 10rem;
+  transition: font-size 2s;
+  /* transition-timing-function: linear; */
+  /* transition-delay: 1s; */
 }
 
 ul {
@@ -82,6 +86,24 @@ a {
   bottom: 0;
   margin: 1rem 1rem 0 0;
   color: #16116352;
+}
+
+.deep {
+  /* display: flex; */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ecebfa;
+  padding: 0.5rem;
+  z-index: 1;
+}
+
+.deep > h1 {
+  font-size: 1rem;
+}
+
+.deep > svg {
+  font-size: 2rem;
 }
 
 @media screen and (min-width: 768px) {
