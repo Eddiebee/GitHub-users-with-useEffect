@@ -64,8 +64,10 @@ a {
 
 .avatar {
   width: 90px;
+  height: 90px;
   border-radius: 50%;
   border: 3px solid rgba(202, 20, 20, 0.945);
+  object-fit: cover;
 }
 
 .name {
